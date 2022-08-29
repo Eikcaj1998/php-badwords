@@ -1,14 +1,21 @@
-<?php
-echo "hello world";
+<?php 
+
+$text= 'ciao mi chiamo Jackie Wang
+';
+
+echo $text;
+echo '<br> </br>';
+echo strlen($text);
+
+
+$bad_words = $_GET['bad_words'];
+
+//replace
+$new_text= str_replace($bad_words, '***', $text);
+
+//new text
+echo '<br> </br>';
+echo $new_text;
+echo '<br> </br>';
+echo strlen($new_text);
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-</body>
-</html>
